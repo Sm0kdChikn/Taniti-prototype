@@ -1,0 +1,200 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #177cbf;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: rgb(241, 255, 234);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #177cbf;
+}
+
+nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navi {
+    margin-right: 20px;
+    margin-top: 10px;
+    float: left;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: #afdfff;
+    color: #fff;
+}
+
+.navi:hover {
+    background-color: #65c1ff;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 20px;
+    margin-left: 65%;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #177cbf;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.book-now {
+    background-color: #f0ad4e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10%;
+}
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url("resources/maldives-7297883_640.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(192, 238, 192);
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: -1px 0 lightgreen;
+}
+
+.hero p {
+    color: #fff;
+    font-size: 18px;
+    text-shadow: -1px 0 lightgreen;
+}
+
+/* Highlights Section Styles */
+.highlights {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container {
+    margin-left: 40%;
+}
+
+.highlights h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.highlights article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    text-align: center;
+    width: 25%;
+}
+
+.highlights article:last-child {
+    margin-right: 0;
+}
+
+.highlights article img {
+    margin-bottom: 15px;
+}
+
+.highlights article h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.carousel {
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.carousel p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Call to Action Section Styles */
+.cta {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cta .button {
+    display:
+}
+
+.social-proof {
+    width: 300px;
+    height: 200px;
+}
