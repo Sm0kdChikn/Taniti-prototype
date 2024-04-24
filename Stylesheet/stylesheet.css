@@ -148,6 +148,65 @@ header {
     /* Corrects positioning  due to absolute positioning */
 }
 
+.taniti-intro {
+    background-color: rgb(218, 252, 218);
+    /* Light green background, similar to highlights section */
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    /* Add subtle gradient */
+    padding: 50px 0;
+    /* Consistent padding as in other sections */
+    text-align: center;
+    /* Center content horizontally */
+    text-shadow: 2px 2px 5px grey;
+    /* Consistent text shadow effect */
+}
+
+.taniti-intro h2 {
+    font-size: 30px;
+    /* Adjust heading size based on your preference */
+    margin-bottom: 20px;
+    /* Consistent spacing below heading */
+    color: #333;
+    /* Consistent text color for headings */
+}
+
+.taniti-intro p {
+    font-size: 16px;
+    /* Consistent paragraph text size */
+    line-height: 1.5;
+    /* Consistent line spacing for readability */
+    margin: 0px 200px;
+    /* Consistent spacing below paragraph */
+}
+
+.taniti-intro ul {
+    list-style: disc;
+    /* Bullet point style */
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.taniti-intro li {
+    margin-bottom: 10px;
+    /* Spacing between list items */
+}
+
+.taniti-intro a {
+    color: #007bff;
+    /* Consistent blue color for links */
+    text-decoration: none;
+    /* Remove underline from link */
+    font-weight: bold;
+    /* Bold text for link */
+}
+
+.taniti-intro a:hover {
+    text-decoration: underline;
+    /* Underline on hover for link */
+}
+
 /* Highlights Section Styles */
 .highlights {
     padding: 50px 0;
@@ -402,6 +461,69 @@ header {
     margin: 5px;
     /* Example margin */
 }
+
+
+/* Styles for the call to action section */
+.call-to-action {
+    text-align: center;
+    /* Center content horizontally */
+    padding: 50px 0;
+    /* Add top and bottom padding */
+    background-color: #f0f0f0;
+    /* Light gray background */
+}
+
+.call-to-action h2 {
+    font-size: 24px;
+    /* Set heading size */
+    margin-bottom: 20px;
+    /* Add spacing below heading */
+}
+
+.call-to-action p {
+    font-size: 16px;
+    /* Set paragraph text size */
+    margin-bottom: 20px;
+    /* Add spacing below paragraph */
+    line-height: 1.5;
+    /* Adjust line spacing for readability */
+}
+
+.call-to-action .button {
+    display: inline-block;
+    /* Display buttons inline */
+    padding: 10px 20px;
+    /* Set button padding */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Add rounded corners */
+    font-size: 16px;
+    /* Set button text size */
+    text-align: center;
+    /* Center button text */
+    text-decoration: none;
+    /* Remove underline from text */
+    color: #fff;
+    /* Set button text color */
+    background-color: #007bff;
+    margin: 0 10px;
+    /* Add spacing between buttons */
+}
+
+.call-to-action .button:hover {
+    background-color: rgb(152, 176, 255);
+    /* Change button color on hover */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+.call-to-action .button:first-child {
+    /* Style the first button */
+    background-color: #007bff;
+    /* Blue background color */
+}
+
 
 footer {
     background-color: darkgrey;
