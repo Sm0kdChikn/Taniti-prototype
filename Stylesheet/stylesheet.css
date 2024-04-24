@@ -31,33 +31,32 @@ header {
     background-color: rgb(167, 218, 184);
     padding: 10px 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-image: linear-gradient(rgb(156, 252, 156), rgb(255, 255, 255));
 }
 
 .logo {
-    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
     font-weight: bold;
     color: #177cbf;
+    text-shadow: 2px 2px 5px grey;
+    text-decoration: underline;
+    margin-bottom: 20px;
 }
 
-nav {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
 .navi {
-    margin-right: 20px;
-    margin-top: 10px;
+
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     background-color: #afdfff;
     color: #fff;
     font-weight: bold;
+    text-shadow: 2px 2px 5px grey;
 }
+
 
 .navi:hover {
     background-color: #65c1ff;
@@ -73,6 +72,8 @@ nav {
     border: 1px solid #ccc;
     border-radius: 4px;
     margin: 20px;
+    display: flex;
+
 }
 
 .search-bar button {
@@ -82,6 +83,8 @@ nav {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 
 .book-now {
@@ -92,6 +95,9 @@ nav {
     border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 5px grey;
 }
 
 /* Hero Section Styles */
@@ -105,17 +111,19 @@ nav {
     background-size: cover;
     background-position: center;
     background-color: rgb(255, 255, 255);
+
 }
 
 .hero img {
-    width: 75%;
+    width: 1000px;
+
 }
 
 .hero h1 {
     color: #fff;
     font-size: 48px;
     margin-bottom: 20px;
-    text-shadow: -1px 0 lightgreen;
+    text-shadow: 2px 2px 5px rgb(144, 238, 144);
     position: absolute;
     /* Positions the element over the image */
     top: 10%;
@@ -129,7 +137,7 @@ nav {
 .hero p {
     color: #fff;
     font-size: 18px;
-    text-shadow: -1px 0 lightgreen;
+    text-shadow: 2px 2px 5px lightgreen;
     position: absolute;
     /* Positions the element over the image */
     top: 85%;
@@ -145,22 +153,262 @@ nav {
     padding: 50px 0;
     text-align: center;
     background-color: rgb(218, 252, 218);
-    background-image: linear-gradient(rgb(206, 250, 206), rgb(145, 255, 145));
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(145, 255, 145));
+    text-shadow: 2px 2px 5px grey;
+    border-bottom: 3px solid black;
 }
 
 .highlights h2 {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 24px;
+    font-size: 30px;
     font-family: "Lucida Console", "Courier New", monospace;
+    text-decoration: underline;
 }
 
 .highlights h3 {
-    margin: 5px;
+    font-size: 20px;
+    margin: 5%;
     padding: 5px;
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .highlights p {
     font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.highlights img {
+    width: 40%;
+    /* Adjust image width as needed */
+    float: left;
+    margin: 0 10px 10px 0;
+    /* Adjust spacing around image */
+    box-shadow: 5px 5px 12px;
+    border-radius: 10px;
+}
+
+
+
+.highlights p {
+    display: inline-block;
+    /* Allow text to wrap next to image */
+    width: 55%;
+    /* Adjust text width as needed */
+    vertical-align: middle;
+    /* Vertically align text with image */
+    /* Set a specific height if needed to align with image */
+    height: 150px;
+    /* Adjust height as needed */
+    font-size: 18px;
+
+}
+
+
+
+
+
+.testimonials {
+    background-color: #f5f5f5;
+    /* Light background color */
+    padding: 20px;
+    border: 1px solid #ddd;
+    /* Subtle border */
+    border-radius: 5px;
+    /* Rounded corners */
+    margin-bottom: 50px;
+    /* Spacing after section */
+    overflow: hidden;
+    /* Required for carousel effect */
+    position: relative;
+    /* Required for carousel controls (optional) */
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    /* Adjust text color if needed */
+}
+
+.carousel {
+    display: flex;
+    /* Arrange testimonials side-by-side */
+    animation: slide 15s infinite linear;
+    /* Carousel animation (adjust timing as needed) */
+}
+
+.carousel p {
+    background-color: #fff;
+    /* White background for each testimonial */
+    padding: 20px;
+    border-radius: 5px;
+    /* Rounded corners for each testimonial */
+    margin: 10px;
+    /* Adjust spacing between testimonials (optional) */
+    width: calc(100% - 20px);
+    /* Adjust width based on number of testimonials */
+    font-style: italic;
+    /* Italic text for testimonials */
+    line-height: 1.5;
+    /* Adjust line spacing for better readability */
+    position: relative;
+    /* Required for text animation (optional) */
+}
+
+/* Optional Text Animation within Testimonials */
+.carousel p:nth-child(odd) {
+    animation: fadein 5s ease-in-out alternate infinite;
+    /* Fade in animation (adjust timing as needed) */
+}
+
+/* Optional Carousel Controls (Requires additional HTML) */
+.testimonials::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* Position controls over testimonials */
+}
+
+.testimonials::after a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background */
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    opacity: 0.5;
+    /* Adjust initial opacity */
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.testimonials::after a:hover {
+    opacity: 1;
+    /* Full opacity on hover */
+}
+
+.testimonials::after .prev {
+    left: 10px;
+    /* Position left control */
+}
+
+.testimonials::after .next {
+    right: 10px;
+    /* Position right control */
+}
+
+/* Carousel Animations */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Query for Smaller Screens (Optional) */
+@media only screen and (max-width: 768px) {
+    .carousel {
+        animation: none;
+        /* Disable animation on smaller screens (optional) */
+    }
+
+    .carousel p {
+        width: 100%;
+        /* Make testimonials full width on smaller screens */
+    }
+}
+
+.cta {
+    text-align: center;
+    /* Example text alignment */
+    margin-bottom: 20px;
+    /* Example margin */
+}
+
+.cta .button {
+    background-color: #177cbf;
+    /* Example background color */
+    color: #fff;
+    /* Example text color */
+    padding: 10px 20px;
+    /* Example padding */
+    border: none;
+    /* Example border */
+    border-radius: 4px;
+    /* Example border radius */
+    cursor: pointer;
+    /* Example cursor style */
+    margin: 10px;
+    /* Example margin */
+}
+
+.cta .button:hover {
+    background-color: rgb(118, 171, 252);
+}
+
+.social-proof {
+    text-align: center;
+    /* Example text alignment */
+    padding: 20px;
+    /* Example padding */
+}
+
+.social-proof img {
+    width: 100px;
+    /* Example image width */
+    margin-bottom: 10px;
+    /* Example margin */
+}
+
+.social-proof img {
+    width: 100px;
+    /* Example image width */
+    margin-bottom: 10px;
+    /* Example margin */
+}
+
+.social-proof ul {
+    list-style: none;
+    /* Example list style */
+    padding: 0;
+    /* Example padding */
+}
+
+.social-proof li {
+    display: inline-block;
+    /* Example display style */
+    margin: 5px;
+    /* Example margin */
+}
+
+footer {
+    background-color: darkgrey;
+    color: white
+}
+
+footer a {
+    background-color: darkgrey;
+    color: white
 }
