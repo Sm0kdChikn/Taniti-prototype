@@ -103,10 +103,8 @@ header {
 /* Hero Section Styles */
 .hero {
     position: relative;
-    /* Enables positioning of elements over the image */
     text-align: center;
     padding: 20px 0;
-    /* Adjust padding for content placement*/
     background-image: url("resources/maldives-7297883_640.jpg");
     background-size: cover;
     background-position: center;
@@ -125,13 +123,9 @@ header {
     margin-bottom: 20px;
     text-shadow: 2px 2px 5px rgb(144, 238, 144);
     position: absolute;
-    /* Positions the element over the image */
     top: 10%;
-    /* Centers the element vertically */
     left: 50%;
-    /* Centers the element horizontally */
     transform: translate(-50%, -50%);
-    /* Corrects positioning  due to absolute positioning */
 }
 
 .hero p {
@@ -139,75 +133,52 @@ header {
     font-size: 18px;
     text-shadow: 2px 2px 5px lightgreen;
     position: absolute;
-    /* Positions the element over the image */
     top: 85%;
-    /* Adjusts position based on your preference */
     left: 50%;
-    /* Centers the element horizontally */
     transform: translate(-50%, -50%);
-    /* Corrects positioning  due to absolute positioning */
 }
 
 .taniti-intro {
     background-color: rgb(218, 252, 218);
-    /* Light green background, similar to highlights section */
     background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
-    /* Add subtle gradient */
     padding: 50px 0;
-    /* Consistent padding as in other sections */
     text-align: center;
-    /* Center content horizontally */
     text-shadow: 2px 2px 5px grey;
-    /* Consistent text shadow effect */
 }
 
 .taniti-intro h2 {
     font-size: 30px;
-    /* Adjust heading size based on your preference */
     margin-bottom: 20px;
-    /* Consistent spacing below heading */
     color: #333;
-    /* Consistent text color for headings */
 }
 
 .taniti-intro p {
     font-size: 16px;
-    /* Consistent paragraph text size */
     line-height: 1.5;
-    /* Consistent line spacing for readability */
     margin: 0px 200px;
-    /* Consistent spacing below paragraph */
 }
 
 .taniti-intro ul {
     list-style: disc;
-    /* Bullet point style */
     padding: 0;
-    /* Remove default padding */
     margin: 0;
-    /* Remove default margin */
 }
 
 .taniti-intro li {
     margin-bottom: 10px;
-    /* Spacing between list items */
 }
 
 .taniti-intro a {
     color: #007bff;
-    /* Consistent blue color for links */
     text-decoration: none;
-    /* Remove underline from link */
     font-weight: bold;
-    /* Bold text for link */
 }
 
 .taniti-intro a:hover {
     text-decoration: underline;
-    /* Underline on hover for link */
 }
 
-/* Highlights Section Styles */
+
 .highlights {
     padding: 50px 0;
     text-align: center;
@@ -238,10 +209,8 @@ header {
 
 .highlights img {
     width: 40%;
-    /* Adjust image width as needed */
     float: left;
     margin: 0 10px 10px 0;
-    /* Adjust spacing around image */
     box-shadow: 5px 5px 12px;
     border-radius: 10px;
 }
@@ -250,27 +219,18 @@ header {
 
 .highlights p {
     display: inline-block;
-    /* Allow text to wrap next to image */
     width: 55%;
-    /* Adjust text width as needed */
     vertical-align: middle;
-    /* Vertically align text with image */
-    /* Set a specific height if needed to align with image */
     height: 150px;
-    /* Adjust height as needed */
     font-size: 18px;
-
 }
 
 
 /* Styles for the .content section */
 .content {
     background-color: #f5f5f5;
-    /* Light gray background */
     padding: 50px 0;
-    /* Top and bottom padding */
     text-align: center;
-    /* Optional: Center content horizontally */
     background-image: linear-gradient(rgb(255, 255, 255), rgb(145, 255, 145));
     border-bottom: 3px solid black;
 }
@@ -282,77 +242,50 @@ header {
 
 .content h2 {
     font-size: 28px;
-    /* Adjust heading size based on preference */
     margin-bottom: 20px;
-    /* Spacing below heading */
     color: #333;
-    /* Consistent text color */
 }
 
 .planningtrip {
     display: flex;
-    /* Arrange articles side-by-side */
     flex-wrap: wrap;
-    /* Allow articles to wrap onto multiple lines if needed */
     justify-content: space-around;
-    /* Distribute articles evenly within the container */
     margin: 0 auto;
-    /* Center the container horizontally */
 }
 
 .planningtrip article {
     width: calc(33% - 20px);
-    /* Adjust width based on number of articles */
     margin: 10px;
-    /* Spacing between articles */
     padding: 20px;
-    /* Padding within each article */
     border: 1px solid #ddd;
-    /* Subtle border */
     border-radius: 5px;
-    /* Rounded corners */
     text-align: left;
-    /* Align text to the left */
 }
 
 .planningtrip article h3 {
     font-size: 20px;
-    /* Subheading size */
     margin-bottom: 10px;
-    /* Spacing below subheading */
     color: #333;
-    /* Consistent text color */
 }
 
 .planningtrip article p {
     font-size: 16px;
-    /* Paragraph text size */
     line-height: 1.5;
-    /* Adjust line spacing for readability */
 }
 
 
 
 .content form button {
     display: inline-block;
-    /* Display buttons inline */
     padding: 10px 20px;
-    /* Set button padding */
     border: none;
-    /* Remove default border */
     border-radius: 5px;
-    /* Add rounded corners */
     font-size: 16px;
-    /* Set button text size */
     text-align: center;
-    /* Center button text */
     text-decoration: none;
-    /* Remove underline from text */
     color: #fff;
-    /* Set button text color */
     background-color: #007bff;
     margin: 0 10px;
-    /* Add spacing between buttons */
 }
 
 .content form label {
@@ -370,18 +303,12 @@ textarea {
 
 .testimonials {
     background-color: #f5f5f5;
-    /* Light background color */
     padding: 20px;
     border: 1px solid #ddd;
-    /* Subtle border */
     border-radius: 5px;
-    /* Rounded corners */
     margin-bottom: 50px;
-    /* Spacing after section */
     overflow: hidden;
-    /* Required for carousel effect */
     position: relative;
-    /* Required for carousel controls (optional) */
 }
 
 .testimonials h2 {
@@ -389,42 +316,26 @@ textarea {
     margin-bottom: 20px;
     font-size: 24px;
     color: #333;
-    /* Adjust text color if needed */
 }
 
 .carousel {
     display: flex;
-    /* Arrange testimonials side-by-side */
     animation: slide 15s infinite linear;
-    /* Carousel animation (adjust timing as needed) */
 }
 
 .carousel p {
     background-color: #fff;
-    /* White background for each testimonial */
     padding: 20px;
     border-radius: 5px;
-    /* Rounded corners for each testimonial */
     margin: 10px;
-    /* Adjust spacing between testimonials (optional) */
     width: calc(100% - 20px);
-    /* Adjust width based on number of testimonials */
     font-style: italic;
-    /* Italic text for testimonials */
     line-height: 1.5;
-    /* Adjust line spacing for better readability */
     position: relative;
-    /* Required for text animation (optional) */
 }
 
 
-/*.carousel p:nth-child(odd) {
-    animation: fadein 5s ease-in-out alternate infinite;
-}*/
 
-
-
-/* Optional Carousel Controls (Requires additional HTML) */
 .testimonials::after {
     content: "";
     display: block;
@@ -434,7 +345,6 @@ textarea {
     width: 100%;
     height: 100%;
     z-index: 1;
-    /* Position controls over testimonials */
 }
 
 .testimonials::after a {
@@ -443,32 +353,26 @@ textarea {
     transform: translateY(-50%);
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent black background */
     padding: 10px;
     border-radius: 50%;
     font-size: 20px;
     opacity: 0.5;
-    /* Adjust initial opacity */
     transition: opacity 0.3s ease;
     cursor: pointer;
 }
 
 .testimonials::after a:hover {
     opacity: 1;
-    /* Full opacity on hover */
 }
 
 .testimonials::after .prev {
     left: 10px;
-    /* Position left control */
 }
 
 .testimonials::after .next {
     right: 10px;
-    /* Position right control */
 }
 
-/* Carousel Animations */
 @keyframes slide {
     from {
         transform: translateX(0);
@@ -489,41 +393,29 @@ textarea {
     }
 }
 
-/* Media Query for Smaller Screens (Optional) */
 @media only screen and (max-width: 768px) {
     .carousel {
         animation: none;
-        /* Disable animation on smaller screens (optional) */
     }
 
     .carousel p {
         width: 100%;
-        /* Make testimonials full width on smaller screens */
     }
 }
 
 .cta {
     text-align: center;
-    /* Example text alignment */
     margin-bottom: 20px;
-    /* Example margin */
 }
 
 .cta .button {
     background-color: #177cbf;
-    /* Example background color */
     color: #fff;
-    /* Example text color */
     padding: 10px 20px;
-    /* Example padding */
     border: none;
-    /* Example border */
     border-radius: 4px;
-    /* Example border radius */
     cursor: pointer;
-    /* Example cursor style */
     margin: 10px;
-    /* Example margin */
 }
 
 .cta .button:hover {
@@ -532,99 +424,68 @@ textarea {
 
 .social-proof {
     text-align: center;
-    /* Example text alignment */
     padding: 20px;
-    /* Example padding */
 }
 
 .social-proof img {
     width: 100px;
-    /* Example image width */
     margin-bottom: 10px;
-    /* Example margin */
 }
 
 .social-proof img {
     width: 100px;
-    /* Example image width */
     margin-bottom: 10px;
-    /* Example margin */
 }
 
 .social-proof ul {
     list-style: none;
-    /* Example list style */
     padding: 0;
-    /* Example padding */
 }
 
 .social-proof li {
     display: inline-block;
-    /* Example display style */
     margin: 5px;
-    /* Example margin */
 }
 
 
 /* Styles for the call to action section */
 .call-to-action {
     text-align: center;
-    /* Center content horizontally */
     padding: 50px 0;
-    /* Add top and bottom padding */
     background-color: #f0f0f0;
-    /* Light gray background */
 }
 
 .call-to-action h2 {
     font-size: 24px;
-    /* Set heading size */
     margin-bottom: 20px;
-    /* Add spacing below heading */
 }
 
 .call-to-action p {
     font-size: 16px;
-    /* Set paragraph text size */
     margin-bottom: 20px;
-    /* Add spacing below paragraph */
     line-height: 1.5;
-    /* Adjust line spacing for readability */
 }
 
 .call-to-action .button {
     display: inline-block;
-    /* Display buttons inline */
     padding: 10px 20px;
-    /* Set button padding */
     border: none;
-    /* Remove default border */
     border-radius: 5px;
-    /* Add rounded corners */
     font-size: 16px;
-    /* Set button text size */
     text-align: center;
-    /* Center button text */
     text-decoration: none;
-    /* Remove underline from text */
     color: #fff;
-    /* Set button text color */
     background-color: #007bff;
     margin: 0 10px;
-    /* Add spacing between buttons */
 }
 
 .call-to-action .button:hover {
     background-color: rgb(152, 176, 255);
-    /* Change button color on hover */
     cursor: pointer;
-    /* Change cursor to pointer on hover */
 }
 
 .call-to-action .button:first-child {
-    /* Style the first button */
     background-color: #007bff;
-    /* Blue background color */
 }
 
 
